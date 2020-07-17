@@ -40,6 +40,11 @@ read -p "Enter second country :  " country2
 read -p "Enter third country :   " country3
 read -p "Enter fourth country :  " country4
 read -p "How long should the interval between VPN's be (in minutes) ?" time
+echo ""
+echo ""
+echo "To exit press ctrl-c"
+echo ""
+echo ""
 
 for (( ; ; ))
 do
@@ -52,3 +57,4 @@ do
   nordvpn c $country4
   sleep $time'm'
 done
+
