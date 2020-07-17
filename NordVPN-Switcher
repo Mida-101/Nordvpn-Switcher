@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Script : Nordvpnswitcher
+# Author : Mida-101
+# Rev : 1.0
+# Date : 17/07/2020
+# Platform : unix
+#
+# Purpose : Switches between multiple countries in Nordvpn
+#
+# Rev list :
+
+
+
+#Main
+clear
+
+nordvpn countries
+
+read -p "Enter country 1  " country1
+read -p "Enter country 2  " country2
+read -p "Enter country 3  " country3
+read -p "Enter country 4  " country4
+read -p "How long should the interval between VPN's be? (in min)" time
+
+for (( ; ; ))
+do
+  nordvpn c $country1
+  sleep $time
+  nordvpn c $country2
+  sleep $time
+  nordvpn c $country3
+  sleep $time
+  nordvpn c $country4
+  sleep $time
+done
