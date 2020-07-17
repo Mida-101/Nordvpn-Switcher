@@ -9,7 +9,7 @@ To use, just follow these steps:
 2) chmod +x ./Nordvpn-switcher
 3) Run the script ./Nordvpn-switcher
 4) Enter 4 countries you want to switch between to.
-5) Enter a the time in minutes you want between each country-switch.
+5) Enter the time in minutes you want between each country-switch.
 6) Let the good times roll.
 
     © 2020 GitHub, Inc.
