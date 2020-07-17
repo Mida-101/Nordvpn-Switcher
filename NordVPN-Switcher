@@ -32,6 +32,12 @@ echo ""
 echo "By MiDa-101"
 echo ""
 echo ""
+if ! command -v nordvpn &> /dev/null
+then
+    echo "Nordvpn is not installed"
+    exit 0
+fi
+echo ""
 nordvpn countries
 echo ""
 echo ""
