@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script : Nordvpnswitcher
+# Script : Nordvpn-Switcher
 # Author : MiDa-101
 # Rev : 1.0
 # Date : 17/07/2020
@@ -32,15 +32,21 @@ echo ""
 echo "By MiDa-101"
 echo ""
 echo ""
+
+# Checks if nordvpn is available on system. If not, then exit 0
 if ! command -v nordvpn &> /dev/null
 then
     echo "Nordvpn is not installed"
     exit 0
 fi
 echo ""
+
+# Displays countries available on nordvpn
 nordvpn countries
 echo ""
 echo ""
+
+# Let's the user enter the countries and the time-interval in minutes
 read -p "Enter first country :   " country1
 read -p "Enter second country :  " country2
 read -p "Enter third country :   " country3
@@ -52,6 +58,7 @@ echo "To exit press ctrl-c"
 echo ""
 echo ""
 
+# Infinite loop until broken with ctrl-c
 for (( ; ; ))
 do
   nordvpn c $country1
