@@ -1,7 +1,7 @@
 # Nordvpn-switcher
 
-A bash-script that let's you automatically switch between different 4 countries in VPN for some extra privacy/security. You'll be hopping all over the world.
-To use this script you need to have the nordvpn deb installed. This (to my knowledge) excludes kali from using this switcher.
+A bash-script that let's you automatically switch between different 4 countries in VPN. You'll be hopping all over the world.
+To use this script you need to have the nordvpn deb installed. 
 
 To use, just follow these steps:
 
