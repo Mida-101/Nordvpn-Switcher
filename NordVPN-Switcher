@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Script : Nordvpnswitcher
-# Author : Mida-101
+# Author : MiDa-101
 # Rev : 1.0
 # Date : 17/07/2020
 # Platform : unix
 #
-# Purpose : Switches between multiple countries in Nordvpn
+# Purpose : Switch between multiple countries in Nordvpn in a predetermined timespan
 #
 # Rev list :
 
@@ -14,23 +14,41 @@
 
 #Main
 clear
-
+echo "   _    _  _______  ______    ______   __   __  _______  __    _     "
+echo " |  |  | ||       ||    _ |  |      | |  | |  ||       ||  |  | |  "
+echo " |   |_| ||   _   ||   | ||  |  _    ||  |_|  ||    _  ||   |_| |  "
+echo " |       ||  | |  ||   |_||_ | | |   ||       ||   |_| ||       |  "
+echo " |  _    ||  |_|  ||    __  || |_|   ||       ||    ___||  _    |  "
+echo " | | |   ||       ||   |  | ||       | |     | |   |    | | |   |  "
+echo " |_|  |__||_______||___|  |_||______|   |___|  |___|    |_|  |__|  "
+echo " _______  _     _  ___   _______  _______  __   __  _______  ______ "
+echo " |       || | _ | ||   | |       ||       ||  | |  ||       ||    _ | "
+echo " |  _____|| || || ||   | |_     _||       ||  |_|  ||    ___||   | || "
+echo " | |_____ |       ||   |   |   |  |       ||       ||   |___ |   |_||_  "
+echo " |_____  ||       ||   |   |   |  |      _||       ||    ___||    __  | "
+echo "  _____| ||   _   ||   |   |   |  |     |_ |   _   ||   |___ |   |  | |  "
+echo " |_______||__| |__||___|   |___|  |_______||__| |__||_______||___|  |_| "
+echo ""
+echo "By MiDa-101"
+echo ""
+echo ""
 nordvpn countries
-
-read -p "Enter country 1  " country1
-read -p "Enter country 2  " country2
-read -p "Enter country 3  " country3
-read -p "Enter country 4  " country4
-read -p "How long should the interval between VPN's be? (in min)" time
+echo ""
+echo ""
+read -p "Enter first country :   " country1
+read -p "Enter second country :  " country2
+read -p "Enter third country :   " country3
+read -p "Enter fourth country :  " country4
+read -p "How long should the interval between VPN's be (in minutes) ?" time
 
 for (( ; ; ))
 do
   nordvpn c $country1
-  sleep $time
+  sleep $time'm'
   nordvpn c $country2
-  sleep $time
+  sleep $time'm'
   nordvpn c $country3
-  sleep $time
+  sleep $time'm'
   nordvpn c $country4
-  sleep $time
+  sleep $time'm'
 done
